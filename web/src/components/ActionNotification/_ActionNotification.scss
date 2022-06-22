@@ -42,6 +42,7 @@
 	.action_notification-text {
 		line-height: $font-size-subtext;
 		text-transform: uppercase;
+		font-size: 1rem !important;
 	}
 
 	.action_notification-image {
@@ -62,7 +63,8 @@
 			align-items: center;
 		}
 		svg {
-			@include size(1rem);
+			@include size(1.4rem);
+			margin-bottom: 2px;
 		}
 	}
 	.cancel-cross-2 {
@@ -85,6 +87,26 @@
 		stroke: $link;
 	}
 }
+
+@media screen and (max-width: 1096px) and (min-width: 400px) {
+	.action_notification-wrapper {
+		.action_notification-svg {
+			
+			svg {
+				@include size(1.5rem);
+				margin-bottom: 2px;
+			}
+		}
+		
+		.action_notification-text {
+			line-height: $font-size-subtext;
+			text-transform: uppercase;
+			font-size: 1.4rem !important;
+		}
+	}
+}
+
+
 
 .direction_ltr {
 	.action_notification-wrapper {
@@ -130,6 +152,8 @@
 		}
 	}
 }
+
+
 
 .direction_rtl {
 	.action_notification-wrapper {
@@ -177,6 +201,5 @@
 .layout-mobile {
 	.action_notification-text {
 		color: $link;
-		font-size:16px;
 	}
 }

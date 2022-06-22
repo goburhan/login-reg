@@ -54,6 +54,8 @@ $placeholder--font-weight: bold;
 	bottom: 0.35rem;
 }
 
+
+
 .datefield-wrapper {
 	position: relative;
 	.field-children:last-child {
@@ -188,9 +190,19 @@ $placeholder--font-weight: bold;
 		flex-wrap: wrap;
 	}
 	.checkfield-input {
-		margin-top: 2px;
+		margin-top: 6px;
 	}
 }
+
+@media screen and (max-width: 1096px) and (min-width: 400px) {
+	.checkfield-wrapper {
+		
+		.checkfield-input {
+			margin-top: 18px;
+		}
+	}
+}
+
 
 .toggle_button-wrapper {
 	.toggle-content {
